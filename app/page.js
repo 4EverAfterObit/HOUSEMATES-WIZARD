@@ -75,7 +75,7 @@ export default function Home() {
 
   return (
     <main>
-      <Brand size="large" />
+      <Brand />
       <section className="hero">
         <h1 className="title">Share the house, fairly.</h1>
         <p className="sub">Split bills, settle up, and take turns on the chores.</p>

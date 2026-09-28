@@ -103,8 +103,6 @@ label.lab{display:block;color:var(--muted);font-size:.85rem;margin:0 0 3px 2px}
   .form{animation:open .18s ease-out}
   @keyframes open{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 }
-.brandlogo{display:block;line-height:0;text-decoration:none}
-.brandlogo.large{margin:0 auto 6px;width:fit-content}
-.brandlogo.small{margin:0 0 10px}
-.toprow{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:4px}
-.toprow .brandlogo{margin:0}
+.brandbar{display:flex;align-items:center;gap:10px;margin:0 0 16px;text-decoration:none;line-height:1}
+.brandbar img{flex:none;display:block}
+.brandname{font-family:var(--display);font-weight:800;font-size:1.25rem;letter-spacing:-.01em;color:var(--ink)}

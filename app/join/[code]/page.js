@@ -75,7 +75,7 @@ export default function JoinPage() {
 
   return (
     <main>
-      <Brand size="large" />
+      <Brand />
 
       {state === "loading" && <div className="notice">Loading…</div>}
       {state === "error" && <div className="notice">{problem}</div>}

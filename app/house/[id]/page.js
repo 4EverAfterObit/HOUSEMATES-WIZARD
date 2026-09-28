@@ -393,7 +393,7 @@ export default function HousePage() {
   if (status === "loading") {
     return (
       <main>
-        <Brand size="large" />
+        <Brand />
         <div className="notice">Connecting to the house…</div>
         <Footer />
       </main>
@@ -402,7 +402,7 @@ export default function HousePage() {
   if (status === "error") {
     return (
       <main>
-        <Brand size="large" />
+        <Brand />
         <div className="notice">{problem}</div>
         <Footer />
       </main>
@@ -433,10 +433,8 @@ export default function HousePage() {
 
   return (
     <main>
-      <div className="toprow">
-        <a className="mini" href="/">← Your houses</a>
-        <Brand size="small" />
-      </div>
+      <Brand />
+      <a className="mini" href="/">← Your houses</a>
 
       <section className="hero">
         <p className="label">{house.name}</p>
