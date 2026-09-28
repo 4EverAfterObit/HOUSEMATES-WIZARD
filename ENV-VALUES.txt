@@ -1,0 +1,4 @@
+Paste these two into Vercel > Project > Settings > Environment Variables (do NOT upload this file to GitHub):
+
+NEXT_PUBLIC_SUPABASE_URL      =  (your Supabase Project URL, https://xxxx.supabase.co)
+NEXT_PUBLIC_SUPABASE_ANON_KEY =  (your Supabase anon / publishable key)
