@@ -3,6 +3,11 @@ import "./globals.css";
 export const metadata = {
   title: "Housemates Wizard",
   description: "Split bills, settle up, and share the chores with everyone you live with.",
+  manifest: "/manifest.json",
+  icons: {
+    icon: "/favicon-64.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export const viewport = {

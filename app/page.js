@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { supabase } from "../lib/supabaseClient";
 import { ensureSession, friendlyError } from "../lib/auth";
 import Footer from "../components/Footer";
+import Brand from "../components/Brand";
 
 export default function Home() {
   const router = useRouter();
@@ -74,7 +75,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="brand">Housemates Wizard</div>
+      <Brand size="large" />
       <section className="hero">
         <h1 className="title">Share the house, fairly.</h1>
         <p className="sub">Split bills, settle up, and take turns on the chores.</p>

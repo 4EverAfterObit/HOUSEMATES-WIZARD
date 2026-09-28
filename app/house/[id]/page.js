@@ -8,6 +8,7 @@ import { computeNet, transfers, fmt, fmtDate, ago } from "../../../lib/money";
 import MoneyForm from "../../../components/MoneyForm";
 import MsgBox from "../../../components/MsgBox";
 import Footer from "../../../components/Footer";
+import Brand from "../../../components/Brand";
 
 export default function HousePage() {
   const { id } = useParams();
@@ -392,7 +393,7 @@ export default function HousePage() {
   if (status === "loading") {
     return (
       <main>
-        <div className="brand">Housemates Wizard</div>
+        <Brand size="large" />
         <div className="notice">Connecting to the house…</div>
         <Footer />
       </main>
@@ -401,7 +402,7 @@ export default function HousePage() {
   if (status === "error") {
     return (
       <main>
-        <div className="brand">Housemates Wizard</div>
+        <Brand size="large" />
         <div className="notice">{problem}</div>
         <Footer />
       </main>
@@ -432,7 +433,10 @@ export default function HousePage() {
 
   return (
     <main>
-      <a className="mini" href="/">← Your houses</a>
+      <div className="toprow">
+        <a className="mini" href="/">← Your houses</a>
+        <Brand size="small" />
+      </div>
 
       <section className="hero">
         <p className="label">{house.name}</p>

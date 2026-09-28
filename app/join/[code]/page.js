@@ -5,6 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { supabase } from "../../../lib/supabaseClient";
 import { ensureSession, friendlyError } from "../../../lib/auth";
 import Footer from "../../../components/Footer";
+import Brand from "../../../components/Brand";
 
 export default function JoinPage() {
   const { code } = useParams();
@@ -74,7 +75,7 @@ export default function JoinPage() {
 
   return (
     <main>
-      <div className="brand">Housemates Wizard</div>
+      <Brand size="large" />
 
       {state === "loading" && <div className="notice">Loading…</div>}
       {state === "error" && <div className="notice">{problem}</div>}
